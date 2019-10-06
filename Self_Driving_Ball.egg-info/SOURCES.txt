@@ -1,7 +1,0 @@
-README.md
-setup.py
-Self_Driving_Ball.egg-info/PKG-INFO
-Self_Driving_Ball.egg-info/SOURCES.txt
-Self_Driving_Ball.egg-info/dependency_links.txt
-Self_Driving_Ball.egg-info/requires.txt
-Self_Driving_Ball.egg-info/top_level.txt
