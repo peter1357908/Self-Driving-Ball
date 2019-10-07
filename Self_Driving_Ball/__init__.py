@@ -12,3 +12,7 @@ register(
     id='BallGoalGravityEasy-v0',
     entry_point='Self_Driving_Ball.envs:BallGoalGravityEasyEnv',
 )
+register(
+    id='BallGoalGravityStopEasy-v0',
+    entry_point='Self_Driving_Ball.envs:BallGoalGravityStopEasyEnv',
+)
