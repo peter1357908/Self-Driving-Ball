@@ -111,8 +111,8 @@ class BallGoalGravityEnv(gym.Env):
             ball.add_attr(self.ball_trans)
             self.goal_trans = rendering.Transform()
             goal.add_attr(self.goal_trans)
-            self.viewer.add_geom(ball)
             self.viewer.add_geom(goal)
+            self.viewer.add_geom(ball)
 
         self.ball_trans.set_translation(self.x / METER_PER_PIXEL, self.y / METER_PER_PIXEL)
         self.goal_trans.set_translation(self.goal_x / METER_PER_PIXEL, self.goal_y / METER_PER_PIXEL)

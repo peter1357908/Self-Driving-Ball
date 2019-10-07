@@ -73,8 +73,8 @@ class BallGoalGravityEasyEnv(BallGoalGravityEnv):
             self.ball_trans = rendering.Transform()
             ball.add_attr(self.ball_trans)
             goal.add_attr(rendering.Transform(translation=(WINDOW_WIDTH, WINDOW_HEIGHT)))
-            self.viewer.add_geom(ball)
             self.viewer.add_geom(goal)
+            self.viewer.add_geom(ball)
 
         self.ball_trans.set_translation(self.x / METER_PER_PIXEL, self.y / METER_PER_PIXEL)
 

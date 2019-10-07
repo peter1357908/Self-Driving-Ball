@@ -86,8 +86,8 @@ class BallGoalGravityStopEasyEnv(BallGoalGravityEnv):
             self.ball_trans = rendering.Transform()
             self.ball.add_attr(self.ball_trans)
             goal.add_attr(rendering.Transform(translation=(WINDOW_WIDTH, WINDOW_HEIGHT)))
-            self.viewer.add_geom(self.ball)
             self.viewer.add_geom(goal)
+            self.viewer.add_geom(self.ball)
 
         self.ball_trans.set_translation(self.x / METER_PER_PIXEL, self.y / METER_PER_PIXEL)
         self.ball.set_color(self.in_goal_frame_count / GOAL_FRAMES, self.in_goal_frame_count / GOAL_FRAMES, 1)
